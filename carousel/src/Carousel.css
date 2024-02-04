@@ -13,3 +13,11 @@
 .Carousel-main > i:hover {
   color: black;
 }
+
+#hideLeftClick {
+  display: none;
+}
+
+#hideRightClick {
+  display: none;
+}
