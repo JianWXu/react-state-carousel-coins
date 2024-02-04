@@ -30,10 +30,10 @@ it("renders without crashing", function () {
   render(<Carousel />);
 });
 
-// it("matches snapshot", function () {
-//   const { asFragment } = render(<Carousel />);
-//   expect(asFragment()).toMatchSnapshot();
-// });
+it("matches snapshot", function () {
+  const { asFragment } = render(<Carousel />);
+  expect(asFragment()).toMatchSnapshot();
+});
 
 it("should move backward when clicking left button", function () {
   const { queryByTestId, queryByAltText } = render(<Carousel />);
