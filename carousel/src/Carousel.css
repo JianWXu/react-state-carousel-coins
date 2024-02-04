@@ -14,10 +14,10 @@
   color: black;
 }
 
-#hideLeftClick {
+.hideLeftClick {
   display: none;
 }
 
-#hideRightClick {
+.hideRightClick {
   display: none;
 }

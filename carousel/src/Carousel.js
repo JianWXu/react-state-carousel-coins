@@ -19,8 +19,10 @@ function Carousel(props) {
       <h1>{props.title}</h1>
       <div className="Carousel-main">
         <i
-          className="fas fa-chevron-circle-left fa-2x"
-          id={beginning ? "hideLeftClick" : ""}
+          className={
+            "fas fa-chevron-circle-left fa-2x " +
+            (beginning ? "hideLeftClick" : "")
+          }
           onClick={goBackward}
           data-testid="left-arrow"
         />
@@ -31,8 +33,9 @@ function Carousel(props) {
           totalNum={total}
         />
         <i
-          className="fas fa-chevron-circle-right fa-2x"
-          id={end ? "hideRightClick" : ""}
+          className={
+            "fas fa-chevron-circle-right fa-2x " + (end ? "hideRightClick" : "")
+          }
           onClick={goForward}
           data-testid="right-arrow"
         />
